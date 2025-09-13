@@ -3,7 +3,7 @@ import { Logo } from "../Logo";
 
 export function Header() {
   return (
-    <header className="flex justify-between items-center">
+    <header className="flex justify-between items-center shadow-xl">
       <div className="flex gap-6">
         <Menu />
         <Search />
