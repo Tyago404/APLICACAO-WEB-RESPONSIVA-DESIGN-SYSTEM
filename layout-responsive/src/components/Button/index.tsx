@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import { ChevronDown } from "lucide-react";
 
 type ButtonFilterProps = {
   onclick?: () => void;
