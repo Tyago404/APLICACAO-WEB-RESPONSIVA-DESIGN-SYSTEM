@@ -2,16 +2,16 @@ import clsx from "clsx";
 
 type DivContainerProps = {
     children: React.ReactNode;
-    styles?:string;
+    classname?:string;
 }
 
-export function DivContainer({children, styles}:DivContainerProps) {
+export function DivContainer({children, classname}:DivContainerProps) {
     return(
         <div className={ 
         clsx(
         'flex',
         'justify-center',
         'items-center',
-        styles)}>{children}</div>
+        classname)}>{children}</div>
     )
 }
