@@ -4,7 +4,7 @@ type MainContainerProps = {
 
 export function MainContainer({ children }: MainContainerProps) {
   return (
-    <div className="dark:text-gray-50 dark:bg-gray-700 min-h-screen">
+    <div className="dark:text-gray-50 dark:bg-gray-800 min-h-screen">
       {children}
     </div>
   );

@@ -12,7 +12,7 @@ export default function Home() {
         <Header />
         <SlideShow />
         <FilterModal />
-        <Heading text="PRODUTOS"/> 
+        <Heading as="h2" text="PRODUTOS"/> 
       </MainContainer>
     </>
   );

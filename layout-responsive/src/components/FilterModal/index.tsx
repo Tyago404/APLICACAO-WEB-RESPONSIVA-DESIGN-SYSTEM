@@ -28,7 +28,7 @@ export function FilterModal() {
       >
         <div className="w-screen h-screen bg-gray-800 flex flex-col gap-6 text-white items-center  ">
           <DivContainer classname="flex-col mt-10">
-            <Heading text="PRODUTOS" />
+            <Heading as="h2" text="PRODUTOS" />
             <ul className="flex flex-col gap-2 items-center m-2">
               <li>VIOLÕES</li>
               <li>GUITARRAS</li>
@@ -40,7 +40,7 @@ export function FilterModal() {
           </DivContainer>
 
           <DivContainer classname="flex-col gap-3">
-            <Heading text="PREÇO" />
+            <Heading  as="h2" text="PREÇO" />
             <input type="range" />
             <p>R$300,00 - R$5.000,00</p>
           </DivContainer>
@@ -48,13 +48,13 @@ export function FilterModal() {
           <hr className="w-[180px]" />
 
           <DivContainer classname="flex-col gap-3">
-            <Heading text="COR" />
+            <Heading as="h2" text="COR" />
             <div className="flex m-3 gap-3">
-              <div className="bg-blue-500 rounded-full w-10 h-10 border border-black"></div>
-              <div className="bg-red-500 rounded-full w-10 h-10 border border-black"></div>
-              <div className="bg-orange-500 rounded-full w-10 h-10 border border-black"></div>
-              <div className="bg-black rounded-full w-10 h-10 border border-black"></div>
-              <div className="bg-white rounded-full w-10 h-10 border border-black"></div>
+              <div className="bg-blue-500 rounded-full w-10 h-10 border cursor-pointer hover:scale-105 transition duration-100"></div>
+              <div className="bg-red-500 rounded-full w-10 h-10 border cursor-pointer hover:scale-105 transition duration-100"></div>
+              <div className="bg-orange-500 rounded-full w-10 h-10 border cursor-pointer hover:scale-105 transition duration-100"></div>
+              <div className="bg-black rounded-full w-10 h-10 border cursor-pointer hover:scale-105 transition duration-100"></div>
+              <div className="bg-white rounded-full w-10 h-10 border cursor-pointer hover:scale-105 transition duration-100"></div>
             </div>
             <Button
               color="bg-red-500"
