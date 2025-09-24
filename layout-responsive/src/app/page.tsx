@@ -1,5 +1,6 @@
 "use client";
 import { FilterModal } from "@/components/FilterModal";
+import { GridContainer } from "@/components/GridContainer";
 import { Header } from "@/components/Header";
 import { Heading } from "@/components/Heading";
 import { MainContainer } from "@/components/MainContainer";
@@ -13,6 +14,7 @@ export default function Home() {
         <SlideShow />
         <FilterModal />
         <Heading as="h2" text="PRODUTOS"/> 
+        <GridContainer />
       </MainContainer>
     </>
   );

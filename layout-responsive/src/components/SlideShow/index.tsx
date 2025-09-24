@@ -6,7 +6,7 @@ import '@splidejs/react-splide/css'
 
 export function SlideShow() {
   return (
-    <div className='shadow-xl w-screen'>
+    <div className='shadow-xl '>
       <Splide>
         <SplideSlide>
           <img  src="images/Carousel1.jpg" alt="a" />

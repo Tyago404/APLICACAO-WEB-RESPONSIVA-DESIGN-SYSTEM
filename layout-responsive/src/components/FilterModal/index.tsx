@@ -13,7 +13,7 @@ export function FilterModal() {
       <DivContainer classname="gap-[10px] m-5">
         <Button
           text="FILTROS"
-          color={"bg-amber-700"}
+          color={"bg-amber-500"}
           onclick={() => {
             setIsOpen(true);
           }}
