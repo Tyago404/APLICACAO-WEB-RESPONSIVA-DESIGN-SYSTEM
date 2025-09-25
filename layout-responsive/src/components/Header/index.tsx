@@ -4,16 +4,16 @@ import { Logo } from "../Logo";
 export function Header() {
   return (
     <header className="flex justify-between items-center shadow-xl">
-      <div className="flex gap-6">
-        <Menu />
-        <Search />
+      <div className="flex gap-6 mx-2">
+        <Menu className="hover:scale-105 cursor-pointer"/>
+        <Search className="hover:scale-105 cursor-pointer" />
       </div>
 
-      <Logo />
+      <Logo  />
 
       <div className="flex gap-6">
-        <ShoppingCart />
-        <UserRound />
+        <ShoppingCart className="hover:scale-105 cursor-pointer" />
+        <UserRound className="hover:scale-105 cursor-pointer" />
       </div>
     </header>
   );

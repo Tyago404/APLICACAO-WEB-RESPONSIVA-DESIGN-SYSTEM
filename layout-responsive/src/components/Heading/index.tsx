@@ -10,7 +10,7 @@ export function Heading({text, as:Tag = 'h1'}:HeadingProps){
         h1: 'text-center text-2xl/normal',
         h2:'text-center text-xl/normal'
     }
-    const commomClasses = 'font-semibold'
+    const commomClasses = 'font-semibold my-2'
 
     return <Tag className={clsx(headingClasses[Tag], commomClasses)}>{text}</Tag>
 }

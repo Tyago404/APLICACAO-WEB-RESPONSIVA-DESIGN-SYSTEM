@@ -5,7 +5,7 @@ export function Select() {
     <select
      name="position"
      id="position"
-     className={clsx("bg-amber-500 text-white text-sm", "w-[120px] h-[40px]", "px-2", "rounded-md" )}
+     className={clsx("bg-amber-500 text-white text-sm", "w-[120px] h-[40px]", "px-2", "rounded-md", "cursor-pointer" )}
     >
       <option hidden value="A-Z">POSIÇÃO</option>
       <option value="A-Z">A-Z</option>
