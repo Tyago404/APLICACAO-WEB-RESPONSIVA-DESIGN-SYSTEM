@@ -4,6 +4,7 @@ import { Button } from "../Button";
 import { DivContainer } from "../DivContainer";
 import { Select } from "../Select";
 import { Heading } from "../Heading";
+import { Navbar } from "../Navbar";
 
 export function FilterModal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,13 +30,7 @@ export function FilterModal() {
         <div className="w-screen h-screen bg-gray-800 flex flex-col gap-6 text-white items-center  ">
           <DivContainer classname="flex-col mt-10">
             <Heading as="h2" text="PRODUTOS" />
-            <ul className="flex flex-col gap-2 items-center m-2">
-              <li>VIOLÕES</li>
-              <li>GUITARRAS</li>
-              <li>C.BAIXOS</li>
-              <li>VIOLINOS</li>
-              <li>mostrar mais...</li>
-            </ul>
+            <Navbar />
             <hr className="w-[180px]" />
           </DivContainer>
 
