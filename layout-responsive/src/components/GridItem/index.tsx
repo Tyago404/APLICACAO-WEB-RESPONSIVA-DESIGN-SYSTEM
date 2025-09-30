@@ -10,6 +10,7 @@ export function GridItem({src,alt}:GridItemProps) {
     return(
         <div className={
             clsx(
+            "md:w-40 lg:w-35",
             "bg-amber-400",
             "flex flex-col items-center justify-center rounded",
             "hover:scale-102 cursor-pointer "

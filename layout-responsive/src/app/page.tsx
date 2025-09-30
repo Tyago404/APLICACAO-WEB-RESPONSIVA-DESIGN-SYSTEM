@@ -14,37 +14,44 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <Header />
-      <SlideShow classname="block md:hidden"/>
-      <SlideShow classname="hidden md:flex" height={350} />
-    
+      <header>
+        <Header />
+        <SlideShow classname="block md:hidden" />
+        <SlideShow classname="hidden md:flex" height={350} />
+      </header>
+
       <MainContainer>
         <FilterModal />
+        <div className="flex gap-8">
+          <div className="p-2 bg-black w-50 h-150 hidden md:flex"></div>
 
-        <Heading as="h2" text="PRODUTOS" />
+          <main>
+            <Heading as="h2" text="PRODUTOS" />
+            <GridContainer />
 
-        <GridContainer />
+              <DivContainer classname="flex flex-col mb-4">
+                <Heading as="h2" text="COMPRE POR COLEÇÃO" />
+                <div className="max-w-[900px] mx-auto">
+                  <SlideShow />
+                </div>
+              </DivContainer>
 
-        <Heading as="h2" text="COMPRE POR COLEÇÃO" />
-
-        <div className="max-w-[500px] mx-auto">
-          <SlideShow />
+          </main>
         </div>
-        <section>
-          <DivContainer classname="mx-4 rounded flex flex-col gap-2">
-            <Heading
-              as="h1"
-              text="Receba novidades e
-          ofertas exclusivas!"
-            />
-            <Input placeholder="Nome:" />
-            <Input placeholder="Email:" />
-            <Button color="bg-green-900" text="Enviar" />
-          </DivContainer>
-        </section>
       </MainContainer>
+
       <footer>
         <DivContainer classname="bg-gray-950 flex-col rounded">
+             <Heading
+                  as="h1"
+                  text="Receba novidades e
+          ofertas exclusivas!"
+                />
+              <form action="submit" className="flex flex-col md:flex-row gap-2 items-center">
+                <Input placeholder="Nome:" />
+                <Input placeholder="Email:" />
+                <Button color="bg-green-900" text="Enviar" />
+              </form>
           <Heading as="h2" text="NOSSAS REDES" />
           <nav>
             <ul className="flex gap-2">

@@ -10,7 +10,7 @@ export function FilterModal() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <div className="md:hidden">
       <DivContainer classname="gap-[10px] m-5">
         <Button
           text="FILTROS"
