@@ -14,21 +14,19 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-        <Header />
+      <Header />
+      <SlideShow classname="block md:hidden"/>
+      <SlideShow classname="hidden md:flex" height={350} />
+    
       <MainContainer>
-
-        <DivContainer classname="mx-auto  ">
-          <SlideShow />
-        </DivContainer>
-
         <FilterModal />
 
         <Heading as="h2" text="PRODUTOS" />
-       
+
         <GridContainer />
-       
+
         <Heading as="h2" text="COMPRE POR COLEÇÃO" />
-        
+
         <div className="max-w-[500px] mx-auto">
           <SlideShow />
         </div>
@@ -44,44 +42,43 @@ export default function Home() {
             <Button color="bg-green-900" text="Enviar" />
           </DivContainer>
         </section>
-
       </MainContainer>
-        <footer>
-          <DivContainer classname="bg-gray-950 flex-col rounded">
-            <Heading as="h2" text="NOSSAS REDES" />
-            <nav>
-              <ul className="flex gap-2">
-                <li className="hover:scale-105 cursor-pointer">
-                  <Instagram size={30} />{" "}
-                </li>
-                <li className="hover:scale-105 cursor-pointer">
-                  <Twitter size={30} />
-                </li>
-                <li className="hover:scale-105 cursor-pointer">
-                  <Facebook size={30} />
-                </li>
-                <li className="hover:scale-105 cursor-pointer">
-                  <Phone size={30} />
-                </li>
-              </ul>
-            </nav>
-            <DivContainer classname="flex-col my-8 hover:scale-105">
-              <p className="text-center">By Tiago Santos</p>
-              <Link
-                target="blank"
-                href="https://www.linkedin.com/in/tiago-santos-53761b179/"
-              >
-                Meu linkedin
-              </Link>
-              <Link
-                target="blank"
-                href="https://www.linkedin.com/in/tiago-santos-53761b179/"
-              >
-                <Linkedin />
-              </Link>
-            </DivContainer>
+      <footer>
+        <DivContainer classname="bg-gray-950 flex-col rounded">
+          <Heading as="h2" text="NOSSAS REDES" />
+          <nav>
+            <ul className="flex gap-2">
+              <li className="hover:scale-105 cursor-pointer">
+                <Instagram size={30} />{" "}
+              </li>
+              <li className="hover:scale-105 cursor-pointer">
+                <Twitter size={30} />
+              </li>
+              <li className="hover:scale-105 cursor-pointer">
+                <Facebook size={30} />
+              </li>
+              <li className="hover:scale-105 cursor-pointer">
+                <Phone size={30} />
+              </li>
+            </ul>
+          </nav>
+          <DivContainer classname="flex-col my-8 hover:scale-105">
+            <p className="text-center">By Tiago Santos</p>
+            <Link
+              target="blank"
+              href="https://www.linkedin.com/in/tiago-santos-53761b179/"
+            >
+              Meu linkedin
+            </Link>
+            <Link
+              target="blank"
+              href="https://www.linkedin.com/in/tiago-santos-53761b179/"
+            >
+              <Linkedin />
+            </Link>
           </DivContainer>
-        </footer>
+        </DivContainer>
+      </footer>
     </>
   );
 }
