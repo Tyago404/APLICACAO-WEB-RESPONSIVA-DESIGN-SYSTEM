@@ -11,13 +11,12 @@ export function GridItem({src,alt}:GridItemProps) {
         <div className={
             clsx(
             "bg-amber-400",
-            " w-[143px] h-[200px]" ,
-            " flex flex-col items-center justify-center rounded",
+            "flex flex-col items-center justify-center rounded",
             "hover:scale-102 cursor-pointer "
             )}>
             <Image src={src} alt={alt} width={100} height={100} />
             <Heading as="h2" text="Product"/>
-            <p className="text-center">Lorem ipsum dolor sit amet.</p>
+            <p className="text-center mx-2">Lorem ipsum dolor sit amet.</p>
         </div>
     )
 }

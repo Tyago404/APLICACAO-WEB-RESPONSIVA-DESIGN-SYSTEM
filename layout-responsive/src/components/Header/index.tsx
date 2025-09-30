@@ -24,7 +24,7 @@ export function Header() {
       <div className="flex items-center gap-6">
         <Input placeholder="Pesquisar" classname="hidden md:block w-45"/>
         <ShoppingCart className="hover:scale-105 cursor-pointer" size={25} />
-        <UserRound className="hover:scale-105 cursor-pointer" size={25} />
+        <UserRound className="hover:scale-103 cursor-pointer " size={25} />
       </div>
     </header>
   );

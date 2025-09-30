@@ -12,7 +12,9 @@ export function Button({ onclick,color,text}: ButtonFilterProps) {
     'w-[120px] h-[40px]',
     'rounded-md',
     'text-white text-sm',
-    'cursor-pointer'
+    'cursor-pointer',
+    'm-2'
+  
   );
 
   return (

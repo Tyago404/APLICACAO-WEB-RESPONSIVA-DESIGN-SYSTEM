@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import clsx from "clsx";
 
 const inter = Inter({
   weight:['300','400','500'],
@@ -23,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="pt-Br">
       <body
-        className={inter.className}
+        className={clsx(inter.className, 'bg-gray-700 text-white')}
       >
         {children}
       </body>
