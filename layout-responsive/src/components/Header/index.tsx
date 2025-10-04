@@ -9,22 +9,44 @@ export function Header() {
     <header
       className={clsx(
         "flex justify-between items-center shadow-xl",
+        "dark:text-gray-50 text-gray-800",
+        "dark:bg-gray-800 bg-gray-50"
       )}
     >
       <div className="flex gap-6 mx-2 md:hidden">
-        <Menu className="hover:scale-105 cursor-pointer" size={25} />
-        <Search className="hover:scale-105 cursor-pointer" size={25} />
+        <div title="Menu de filtros">
+          <Menu
+            className="hover:scale-105 cursor-pointer"
+            size={25}
+            aria-label="Menu de filtros"
+          />
+        </div>
+        <div title="Pesquisar produto">
+          <Search
+            className="hover:scale-105 cursor-pointer"
+            size={25}
+            aria-label="Pesquisar produto"
+          />
+        </div>
       </div>
 
       <div className="flex">
         <Logo />
-        <Navbar classname="hidden md:flex"/>
+        <Navbar classname="hidden md:flex" ulClassName="flex-row" />
       </div>
 
       <div className="flex items-center gap-6">
-        <Input placeholder="Pesquisar" classname="hidden md:block w-45"/>
-        <ShoppingCart className="hover:scale-105 cursor-pointer" size={25} />
-        <UserRound className="hover:scale-103 cursor-pointer " size={25} />
+        <Input placeholder="Pesquisar" classname="hidden md:block w-45" />
+        <div title="Carrinho">
+          <ShoppingCart
+            className="hover:scale-105 cursor-pointer"
+            size={25}
+            aria-label="Carrinho"
+          />
+        </div>
+        <div title="Perfil">
+          <UserRound className="hover:scale-103 cursor-pointer " size={25} />
+        </div>
       </div>
     </header>
   );

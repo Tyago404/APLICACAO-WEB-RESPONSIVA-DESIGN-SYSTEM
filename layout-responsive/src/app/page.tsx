@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/Button";
 import { DivContainer } from "@/components/DivContainer";
+import { FilterContent } from "@/components/FilterContent";
 import { FilterModal } from "@/components/FilterModal";
 import { GridContainer } from "@/components/GridContainer";
 import { Header } from "@/components/Header";
@@ -8,7 +9,7 @@ import { Heading } from "@/components/Heading";
 import { Input } from "@/components/Input";
 import { MainContainer } from "@/components/MainContainer";
 import { SlideShow } from "@/components/SlideShow";
-import { Facebook, Instagram, Linkedin, Phone, Twitter, X } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Phone, Twitter } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -22,36 +23,40 @@ export default function Home() {
 
       <MainContainer>
         <FilterModal />
-        <div className="flex gap-8">
-          <div className="p-2 bg-black w-50 h-150 hidden md:flex"></div>
+        <div className="flex gap-8  ">
+          <div className="p-2 bg-gray-700  hidden md:flex m-auto ">
+            <FilterContent />
+          </div>
 
           <main>
             <Heading as="h2" text="PRODUTOS" />
             <GridContainer />
 
-              <DivContainer classname="flex flex-col mb-4">
-                <Heading as="h2" text="COMPRE POR COLEÇÃO" />
-                <div className="max-w-[900px] mx-auto">
-                  <SlideShow />
-                </div>
-              </DivContainer>
-
+            <DivContainer classname="flex flex-col mb-4">
+              <Heading as="h2" text="COMPRE POR COLEÇÃO" />
+              <div className="max-w-[900px] mx-auto">
+                <SlideShow />
+              </div>
+            </DivContainer>
           </main>
         </div>
       </MainContainer>
 
       <footer>
-        <DivContainer classname="bg-gray-950 flex-col rounded">
-             <Heading
-                  as="h1"
-                  text="Receba novidades e
+        <DivContainer classname={"bg-gray-950 flex-col rounded text-gray-50"}>
+          <Heading
+            as="h1"
+            text="Receba novidades e
           ofertas exclusivas!"
-                />
-              <form action="submit" className="flex flex-col md:flex-row gap-2 items-center">
-                <Input placeholder="Nome:" />
-                <Input placeholder="Email:" />
-                <Button color="bg-green-900" text="Enviar" />
-              </form>
+          />
+          <form
+            action="submit"
+            className="flex flex-col md:flex-row gap-2 items-center"
+          >
+            <Input placeholder="Nome:" />
+            <Input placeholder="Email:" />
+            <Button color="bg-green-900" text="Enviar" />
+          </form>
           <Heading as="h2" text="NOSSAS REDES" />
           <nav>
             <ul className="flex gap-2">

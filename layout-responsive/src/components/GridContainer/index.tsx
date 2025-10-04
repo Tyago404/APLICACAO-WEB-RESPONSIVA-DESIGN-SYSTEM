@@ -9,7 +9,7 @@ export function GridContainer() {
           "grid grid-cols-[repeat(2,160px)] gap-4",
           "sm:grid-cols-3",
           "md:grid-cols-4 ",
-          "lg:grid-cols-6",
+          "lg:grid-cols-6"
         )}
       >
         <GridItem src="/images/RifflyLogo.png" alt="logo" />
@@ -21,9 +21,9 @@ export function GridContainer() {
       </div>
 
       <div
-          className={clsx(
+        className={clsx(
           "hidden lg:grid",
-          "grid-cols-6 gap-4 items-center md:items-end",
+          "grid-cols-6 gap-4 items-center md:items-end"
         )}
       >
         <GridItem src="/images/RifflyLogo.png" alt="logo" />

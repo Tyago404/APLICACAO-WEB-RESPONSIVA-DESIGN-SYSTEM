@@ -13,7 +13,7 @@ export function Button({ onclick,color,text}: ButtonFilterProps) {
     'rounded-md',
     'text-white text-sm',
     'cursor-pointer',
-    'm-2'
+    'm-2 md:hidden'
   
   );
 

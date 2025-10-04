@@ -1,31 +1,46 @@
-"use client"
+"use client";
 
-import {Splide, SplideSlide} from '@splidejs/react-splide';
-import '@splidejs/react-splide/css'
-import clsx from 'clsx';
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
+import clsx from "clsx";
+import Image from "next/image";
 
 type SlideShowProps = {
-  height?:number;
-  classname?:string;
-}
+  height?: number;
+  classname?: string;
+};
 
-
-export function SlideShow({height,classname}:SlideShowProps) {
+export function SlideShow({ height, classname }: SlideShowProps) {
   return (
     <div className={clsx(classname)}>
       <Splide
-  options={ {
-    height:height,
-  } }
->
+        options={{
+          height: height,
+        }}
+      >
         <SplideSlide>
-          <img  src="images/Carousel1.jpg" alt="a" />
+          <Image
+            alt="slideOne"
+            src="/images/Carousel1.jpg"
+            width={1536}
+            height={864}
+          />
         </SplideSlide>
-        <SplideSlide >
-          <img src="images/Carousel2.jpg" alt="a" />
+        <SplideSlide>
+          <Image
+            alt="slideTwo"
+            src="/images/Carousel2.jpg"
+            width={1536}
+            height={864}
+          />
         </SplideSlide>
-        <SplideSlide >
-          <img src="images/Carousel3.jpg" alt="a" />
+        <SplideSlide>
+          <Image
+            alt="slideThree"
+            src="/images/Carousel3.jpg"
+            width={1536}
+            height={864}
+          />
         </SplideSlide>
       </Splide>
     </div>

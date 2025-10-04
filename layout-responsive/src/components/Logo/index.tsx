@@ -9,6 +9,7 @@ export function Logo() {
         alt="Logo"
         width={50}
         height={50}
+        title="Logo"
         priority
       />
     </>
