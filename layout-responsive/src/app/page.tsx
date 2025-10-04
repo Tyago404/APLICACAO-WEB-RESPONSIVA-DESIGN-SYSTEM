@@ -60,16 +60,32 @@ export default function Home() {
           <Heading as="h2" text="NOSSAS REDES" />
           <nav>
             <ul className="flex gap-2">
-              <li className="hover:scale-105 cursor-pointer">
+              <li
+                className="hover:scale-105 cursor-pointer"
+                title="Acessar Instagram"
+                aria-label="Acessar Instagram"
+              >
                 <Instagram size={30} />{" "}
               </li>
-              <li className="hover:scale-105 cursor-pointer">
+              <li
+                className="hover:scale-105 cursor-pointer"
+                title="Acessar Twitter"
+                aria-label="Acessar Twitter"
+              >
                 <Twitter size={30} />
               </li>
-              <li className="hover:scale-105 cursor-pointer">
+              <li
+                className="hover:scale-105 cursor-pointer"
+                title="Acessar Facebook"
+                aria-label="Acessar Facebook"
+              >
                 <Facebook size={30} />
               </li>
-              <li className="hover:scale-105 cursor-pointer">
+              <li
+                className="hover:scale-105 cursor-pointer"
+                title="Nosso telefone"
+                aria-label="Nosso telefone "
+              >
                 <Phone size={30} />
               </li>
             </ul>
